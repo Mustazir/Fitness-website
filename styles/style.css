@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
+
+body{
+    font-family: "Inter", sans-serif;
+    background: #080808f8;
+}
+
+/* shared style */
+
+span{
+    font-family: "Playwrite NZ", cursive
+}
