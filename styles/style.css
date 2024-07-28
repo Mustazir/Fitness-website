@@ -1,13 +1,439 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
 
-body{
+* {
+    margin: 0;
+}
+
+body {
     font-family: "Inter", sans-serif;
     background: #080808f8;
 }
 
 /* shared style */
 
-span{
+span {
     font-family: "Playwrite NZ", cursive
+}
+
+/* text */
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.sub-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 6px;
+}
+
+.description {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0%;
+}
+
+.description-primary {
+    font-size: 0.8rem;
+    font-weight: 400;
+
+}
+
+/* color */
+.c1 {
+    color: rgba(230, 83, 60, 1);
+}
+
+.c2 {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+.btn {
+    font-size: 1.12rem;
+    font-weight: 600;
+    border-radius: 42px;
+    cursor: pointer;
+    padding: 16px 40px;
+    background: none;
+    border: 1px solid rgb(255, 255, 255);
+    color: #FFFFFF;
+}
+
+.btn:hover {
+    background: rgb(230, 83, 60);
+    border: 1px solid rgb(230, 83, 60);
+
+}
+
+
+
+/* header style */
+
+header {
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, .20));
+    margin-top: 0;
+
+}
+
+nav>h3 {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    max-width: 1440px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 57px 190px 32px 190px;
+}
+
+.options>a,
+a {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 8px 20px 8px 20px;
+
+
+}
+
+.options>a:hover {
+    background-color: rgba(230, 83, 60, 1);
+
+    border-radius: 46px;
+
+
+}
+
+.humbars {
+    display: none;
+}
+
+.options {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+
+
+}
+
+/* hero */
+
+.hero {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.hero-container {
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+    margin-bottom: -5px;
+
+
+}
+
+
+.info-button {
+    display: flex;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.hero-info-text {
+    margin: 28px 0px;
+
+}
+
+
+.hero-title {
+
+    font-size: 4.8rem;
+    font-weight: 900;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+
+.hero-container>.hero-img {
+    width: 29%;
+}
+
+
+.hero-container>.hero-img>img {
+    width: 100%;
+}
+
+.hero-img {
+    position: relative;
+}
+
+#left-glass {
+    position: absolute;
+    bottom: 50px;
+    left: -150px;
+}
+
+#right-glass {
+    position: absolute;
+    top: 130px;
+    right: -120px;
+}
+
+.ads-vdo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 23px 28px;
+    
+    justify-content: center;
+}
+
+.ads-vdo>i {
+    font-size: 2rem;
+    margin: 0%;
+}
+
+.ads-vdo>h3 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.info-ads {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+/* Habbits */
+
+
+.habbits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    margin-top: 100px ;
+
+
+
+
+}
+
+.habbit-con-title {
+    width: 38%;
+    text-align: center;
+}
+
+.habit-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    align-items: center;
+
+
+}
+
+.habit-card .img {
+    width: 80%;
+
+    border-radius: 150px;
+
+
+}
+
+.habit-card .img img {
+    width: 100%;
+    border-radius: 150px;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
+}
+
+.habit-container {
+    width: 72%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* for medium device */
+
+@media screen and (min-width:576.1px) and (max-width:992px) {
+    header {
+        margin-bottom: 100px;
+    }
+
+    nav {
+        max-width: 992px;
+        padding: 52px 30px 75px 30px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        width: 95%;
+        align-items: center;
+        margin: auto;
+    }
+
+    .hero-container>.hero-img {
+        margin-top: 100px;
+        width: 95%;
+    }
+
+    .habbits {
+        width: 95%;
+        text-align: center;
+        margin-bottom: 84px;
+
+    }
+
+    .habit-container {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .habbit-con-title {
+        width: 90%;
+    }
+
+    #left-glass {
+        position: absolute;
+        width: 40%;
+        bottom: 50px;
+        left: -100px;
+    }
+
+    #right-glass {
+        width: 40%;
+        position: absolute;
+        top: 10px;
+        right: -101px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width:576px) {
+
+    nav {
+        max-width: 576px;
+        padding: 52px 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .btn{
+        padding: 10px 20px;
+    }
+
+    .options {
+        display: none;
+    }
+
+    .humbars {
+        display: flex;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+
+    .hero-container {
+        flex-direction: column;
+
+        align-items: center;
+        margin: auto 10px;
+
+    }
+
+    .hero-container>.hero-img {
+        width: 90%;
+        margin-bottom: -4px;
+    }
+
+
+    .hero-container>.hero-img>img {
+        width: 100%;
+    }
+
+    #left-glass {
+        
+        bottom: 150px;
+        left: 0px;
+    }
+
+    #right-glass {
+        
+        top: 110px;
+        right: -30px;
+    }
+    .hero-info-text{
+        width: 65%;
+    }
+
+
+
+    .habbits {
+        width: 95%;
+        text-align: center;
+        margin-bottom: 84px;
+
+    }
+
+    .habit-container {
+        grid-template-columns: 1fr;
+
+    }
+
+    .habbit-con-title {
+        width: 90%;
+    }
+
+    .hero-title {
+
+        font-size: 2.25rem;
+        font-weight: 900;
+        line-height: 120%;
+        color: #FFFFFF;
+        margin-bottom: 18px;
+    }
+
 }
