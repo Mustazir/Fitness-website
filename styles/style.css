@@ -60,7 +60,7 @@ span {
     font-weight: 600;
     border-radius: 42px;
     cursor: pointer;
-    padding: 16px 40px;
+    padding: 16px 45px;
     background: none;
     border: 1px solid rgb(255, 255, 255);
     color: #FFFFFF;
@@ -71,6 +71,8 @@ span {
     border: 1px solid rgb(230, 83, 60);
 
 }
+
+
 
 
 
@@ -209,7 +211,7 @@ a {
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 23px 28px;
-    
+
     justify-content: center;
 }
 
@@ -231,17 +233,16 @@ a {
 /* Habbits */
 
 
-.habbits {
+.habbits,
+
+.run {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0px auto;
-    margin-top: 100px ;
-
-
-
-
+    margin-top: 100px;
+    padding: 30px;
 }
 
 .habbit-con-title {
@@ -282,6 +283,35 @@ a {
     margin-top: 60px;
 }
 
+.run {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 75%;
+    background: rgb(34, 34, 34);
+    border-radius: 18px;
+    margin: 100px auto;
+}
+
+.run-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    margin-bottom: 40px;
+
+}
+
+.run-img {
+    width: 50%;
+    border-radius: 18px;
+}
+
+.run-img>img {
+    
+    
+    width: 100%;
+    border-radius: 18px;
+}
 
 
 
@@ -359,7 +389,8 @@ a {
         align-items: center;
         justify-content: space-between;
     }
-    .btn{
+
+    .btn {
         padding: 10px 20px;
     }
 
@@ -395,17 +426,18 @@ a {
     }
 
     #left-glass {
-        
+
         bottom: 150px;
         left: 0px;
     }
 
     #right-glass {
-        
+
         top: 110px;
         right: -30px;
     }
-    .hero-info-text{
+
+    .hero-info-text {
         width: 65%;
     }
 
@@ -434,6 +466,20 @@ a {
         line-height: 120%;
         color: #FFFFFF;
         margin-bottom: 18px;
+    }
+
+    .run{
+        flex-direction: column;
+    }
+    .run-img{
+        width: 75%;
+    }
+    .run-text,.run-title{
+        padding: 2px;
+        margin-top: 20px;
+        width: 75%;
+        justify-content: center;
+        margin: auto;
     }
 
 }
