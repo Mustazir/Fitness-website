@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
 
 * {
     margin: 0;
@@ -13,7 +14,8 @@ body {
 /* shared style */
 
 span {
-    font-family: "Playwrite NZ", cursive
+    font-family: 'Miama', sans-serif;
+    font-weight: 400;
 }
 
 /* text */
@@ -154,6 +156,9 @@ a {
 
 }
 
+.hero-info {
+    width: 47%;
+}
 
 .info-button {
     display: flex;
@@ -171,7 +176,7 @@ a {
 
     font-size: 4.8rem;
     font-weight: 900;
-    line-height: 120%;
+    line-height: 100%;
     color: #FFFFFF;
     margin-bottom: 18px;
 }
@@ -234,7 +239,6 @@ a {
 
 
 .habbits,
-
 .run {
     display: flex;
     flex-direction: column;
@@ -286,7 +290,7 @@ a {
 .run {
     flex-direction: row;
     justify-content: space-around;
-    width: 75%;
+    max-width: 1060px;
     background: rgb(34, 34, 34);
     border-radius: 18px;
     margin: 100px auto;
@@ -296,20 +300,21 @@ a {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 50%;
+    width: 80%;
     margin-bottom: 40px;
 
 }
 
 .run-img {
-    width: 50%;
+    width: 470px;
+    height: 320px;
     border-radius: 18px;
 }
 
 .run-img>img {
-    
-    
+    object-fit: cover;
     width: 100%;
+    height: 100%;
     border-radius: 18px;
 }
 
@@ -347,7 +352,7 @@ a {
     }
 
     .habbits {
-        width: 95%;
+        max-width: 95%;
         text-align: center;
         margin-bottom: 84px;
 
@@ -376,6 +381,43 @@ a {
         right: -101px;
     }
 
+    .hero-info {
+        width: 95%;
+    }
+
+    .hero {
+        width: 80%;
+    }
+
+    .run {
+        max-width: 680px;
+    }
+    .run-title{
+        width:370px  ;
+    }
+
+    .run-title>.btn {
+        width: 55%;
+        height: auto;
+    }
+
+    .run-img {
+        width: 256px;
+        height: 319px;
+        
+
+    }
+
+    .run-img img {
+        width: 100%;
+        object-fit: cover;
+
+        object-position: 70% 100%;
+    }
+    .run-text{
+        width: auto;
+    }
+    
 
 
 }
@@ -444,7 +486,7 @@ a {
 
 
     .habbits {
-        width: 95%;
+        max-width: 95%;
         text-align: center;
         margin-bottom: 84px;
 
@@ -468,18 +510,29 @@ a {
         margin-bottom: 18px;
     }
 
-    .run{
+    .run {
         flex-direction: column;
-    }
-    .run-img{
-        width: 75%;
-    }
-    .run-text,.run-title{
-        padding: 2px;
-        margin-top: 20px;
-        width: 75%;
-        justify-content: center;
-        margin: auto;
+        max-width: 280px;
     }
 
+
+
+    .run-text,
+    .run-title {
+        padding: 2px;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .run-title>.btn,
+    .run-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-info {
+        width: 90%;
+    }
 }
