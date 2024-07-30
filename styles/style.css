@@ -3,7 +3,8 @@
 @import url('https://fonts.cdnfonts.com/css/miama');
 
 * {
-    margin: 0;
+    margin: 0px;
+    pad
 }
 
 body {
@@ -33,6 +34,13 @@ span {
     margin: 0;
     color: rgba(255, 255, 255, 1);
     margin-bottom: 6px;
+}
+
+.cal-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0%;
 }
 
 .description {
@@ -320,54 +328,62 @@ a {
 }
 
 
-.training{
+.training {
     max-width: 1060px;
     margin: auto;
+
+
+
 }
 
-.training-title{
+.training-title {
     display: flex;
     flex-direction: column;
     gap: 14px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
-.row-1{
+
+.row-1 {
     width: 100%;
     display: grid;
     grid-template-columns: 1.5fr 2fr 1.5fr;
-    
+
     height: 200px;
-    
+
 }
-.row-2{
+
+.row-2 {
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1.5fr 2fr;
-    
+
     height: 200px;
-    margin-bottom: 200px;
-    
-}
-.row-1> .column > img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    filter: brightness(40%);
-    
 
 }
-.row-2> .column > img{
+
+.row-1>.column>img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     filter: brightness(40%);
-    
-    
+
+
 }
-.column{
+
+.row-2>.column>img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(40%);
+
+
+}
+
+.column {
     position: relative;
 }
-.rc-text{
+
+.rc-text {
     width: 170px;
     font-size: 1rem;
     color: #FFFFFF;
@@ -375,7 +391,8 @@ a {
     top: 60%;
     left: 10%;
 }
-.rc-text1{
+
+.rc-text1 {
     width: 170px;
     font-size: 1rem;
     color: #FFFFFF;
@@ -383,18 +400,139 @@ a {
     top: 15%;
     left: 10%;
 }
-.rc-text2{
+
+.rc-text2 {
     width: 170px;
     font-size: 1rem;
     color: #FFFFFF;
     position: absolute;
     top: 15%;
     right: 10%;
-    
+
 }
 
-.ah{
+.ah {
     display: none;
+}
+
+.calculator-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+
+}
+
+.calculator-box {
+    background: rgb(34, 34, 34);
+    padding: 50px;
+}
+
+.calculator {
+    display: flex;
+    gap: 50px;
+    width: 1200px;
+    justify-content: center;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.calculate {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+table,
+th,
+td {
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+}
+
+th {
+    padding: 13px 18px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+td {
+    padding: 13px 18px;
+    font-size: 0.87rem;
+    font-weight: 400;
+    opacity: 50%;
+    color: #FFFFFF;
+}
+
+.cal {
+    margin-bottom: 50px;
+}
+
+input,
+select {
+    padding: 12px 40px 12px 20px;
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    margin-bottom: 12px;
+    width: 100%;
+
+}
+
+.size,
+.own-info {
+    display: flex;
+    gap: 12px;
+}
+
+.size>input {
+    width: 300px;
+}
+
+.own-info>input {
+    width: 240px;
+}
+
+.options-1 {
+    border-radius: 8px;
+    background: rgb(57, 57, 57);
+    color: rgb(123, 123, 123);
+
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    border-radius: 8px;
+    border: none;
+
+    width: 100%;
+}
+
+.options-2 {
+    border-radius: 8px;
+    background: rgb(57, 57, 57);
+    width: 300px;
+    color: rgb(123, 123, 123);
+
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    border-radius: 8px;
+    border: none;
+}
+
+.marg {
+    margin-top: 30px;
+    width: 200px;
 }
 
 
@@ -471,8 +609,9 @@ a {
     .run {
         max-width: 680px;
     }
-    .run-title{
-        width:370px  ;
+
+    .run-title {
+        width: 370px;
     }
 
     .run-title>.btn {
@@ -483,7 +622,7 @@ a {
     .run-img {
         width: 256px;
         height: 319px;
-        
+
 
     }
 
@@ -492,15 +631,38 @@ a {
         object-fit: none;
         object-position: 66% 30%;
     }
-    .run-text{
+
+    .run-text {
         width: auto;
     }
-    
-    .training{
-        max-width: 680px ;
+
+    .training {
+        max-width: 680px;
     }
-    .row-2{
+
+    .row-2 {
         grid-template-columns: 2.5fr 2fr 2fr;
+    }
+
+    .calculator {
+
+        flex-direction: column;
+
+        width: 680px;
+
+    }
+
+    .cal-p-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+    }
+
+    .calc-title {
+        width: 590px;
+        margin: 40px;
     }
 
 
@@ -619,24 +781,61 @@ a {
     .hero-info {
         width: 90%;
     }
-    .training{
+
+    .training {
         max-width: 350px;
     }
 
-    .row-1{
+    .row-1 {
         grid-template-columns: 1fr 1fr;
     }
-    .row-2{
+
+    .row-2 {
         grid-template-columns: 1fr 1fr;
     }
-    .mh{
+
+    .mh {
         display: none;
     }
 
-    .ah{
+    .ah {
         display: flex;
         position: absolute;
         top: 75%;
         left: 10%;
     }
+
+    .calculator {
+
+        flex-direction: column;
+
+        width: 355px;
+
+    }
+
+    .cal-p-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+    }
+
+    .calc-title {
+        width: 300px;
+        margin: 40px;
+    }
+    .calculate{
+        width: 355px;
+    }
+    .size>input {
+        width: 110px;
+    }
+    
+    .own-info>input {
+        width: 115px;
+    }
+    
+
+
 }
