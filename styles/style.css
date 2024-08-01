@@ -1020,25 +1020,25 @@ hr{
     }
     .foot-con{
         flex-direction: column;
-        width: 100%;
+        width: 390px;
         
     }
 
      .foot-nav{
         justify-content: space-between;
         flex-direction: column;
-        width: 400px;
+        width: 390px;
     }
     hr{
         
         width: 370px;
     }
     .list-1{
-        width: 50%;
+        width: 185px;
         margin-bottom: 30px;
     }
     .brand{
-        width: 400px;
+        width: 395px;
         margin-bottom: 30px;
     }
     .foot-nav> .list-1 >h2{
