@@ -1021,6 +1021,8 @@ hr{
     .foot-con{
         flex-direction: column;
         width: 390px;
+        justify-content: center;
+        margin: 70px auto ;
         
     }
 
