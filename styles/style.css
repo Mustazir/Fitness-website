@@ -88,6 +88,13 @@ span {
     border: 1px solid rgb(230, 83, 60);
 
 }
+.brand-title{
+    font-size: 4.3rem;
+    color: rgba(230, 83, 60, 1);
+    font-style: italic;
+    font-weight: 800;
+    
+}
 
 
 
@@ -596,7 +603,52 @@ select {
     border-radius: 10px;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    
+    align-items: center;
+    
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.brand{
+    width: 445px;
+}
+.foot-con{
+    display: flex;
+    width: 1060px;
+    align-items: center;
+    margin: 70px;
+    justify-content: space-between;
+}
+.foot-nav{
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+}
+hr{
+    width: 1060px ;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
 
+.foot-des{
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin: 35px;
+}
+.f-w{
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.foot-nav> .list-1 >h2{
+    margin-bottom: 40px;
+}
+
+.list > p , .brand > h1{
+    margin-bottom: 20px ;
+}
 
 
 
@@ -719,7 +771,10 @@ select {
 
     .calc-title {
         width: 590px;
-        margin: 40px;
+        margin: 40px auto;
+        text-align:left;
+        
+        align-items: flex-start;
     }
 
     .team-con {
@@ -743,6 +798,20 @@ select {
         background: none;
     }
 
+    .foot-con{
+        flex-direction: column;
+        gap: 50px   ;
+        width: 670px;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    .foot-nav{
+        justify-content: space-between;
+    }
+    hr{
+        
+        width: 670px;
+    }
 
 }
 
@@ -949,6 +1018,31 @@ select {
     .t-title{
         font-size: 2rem;
     }
-    
+    .foot-con{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+     .foot-nav{
+        justify-content: space-between;
+        flex-direction: column;
+        width: 400px;
+    }
+    hr{
+        
+        width: 370px;
+    }
+    .list-1{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .brand{
+        width: 400px;
+        margin-bottom: 30px;
+    }
+    .foot-nav> .list-1 >h2{
+        margin-bottom: 20px;
+    }
 
 }
