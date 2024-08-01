@@ -88,12 +88,13 @@ span {
     border: 1px solid rgb(230, 83, 60);
 
 }
-.brand-title{
+
+.brand-title {
     font-size: 4.3rem;
     color: rgba(230, 83, 60, 1);
     font-style: italic;
     font-weight: 800;
-    
+
 }
 
 
@@ -429,6 +430,105 @@ a {
     display: none;
 }
 
+.fun {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px auto;
+}
+
+.fun-title {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 700px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.fun-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1090px;
+    gap: 30px;
+    padding: 30px;
+    background: rgb(34, 34, 34);
+    border-radius: 18px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+
+    .pos {
+        display: flex;
+
+    }
+
+
+
+}
+
+.card-img:hover img {
+    transform: scale(1.1);
+    opacity: 0.2;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+
+    text-align: center;
+    color: white;
+    visibility: hidden;
+}
+
+.card-img:hover .overlay {
+    visibility: visible;
+}
+
+.pos {
+    color: rgb(255, 255, 255);
+    font-size: 0.87rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+
+}
+
+.card-title {
+    width: 290px;
+    text-align: center;
+
+}
+
+.fun-con>.card>.card-img {
+    width: 325px;
+    height: 370px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.fun-con>.card>.card-img>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+}
+
+
 .calc-title {
     display: flex;
     flex-direction: column;
@@ -603,51 +703,57 @@ select {
     border-radius: 10px;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     margin: auto;
-    
+
     align-items: center;
-    
+
     background-color: rgba(255, 255, 255, 0.1);
 }
-.brand{
+
+.brand {
     width: 445px;
 }
-.foot-con{
+
+.foot-con {
     display: flex;
     width: 1060px;
     align-items: center;
     margin: 70px;
     justify-content: space-between;
 }
-.foot-nav{
+
+.foot-nav {
     display: flex;
     width: 500px;
     justify-content: space-around;
 }
-hr{
-    width: 1060px ;
+
+hr {
+    width: 1060px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.foot-des{
+.foot-des {
     font-size: 1.2rem;
     font-weight: 200;
     margin: 35px;
 }
-.f-w{
+
+.f-w {
     font-weight: 200;
     color: rgba(255, 255, 255, 0.5);
 }
 
-.foot-nav> .list-1 >h2{
+.foot-nav>.list-1>h2 {
     margin-bottom: 40px;
 }
 
-.list > p , .brand > h1{
-    margin-bottom: 20px ;
+.list>p,
+.brand>h1 {
+    margin-bottom: 20px;
 }
 
 
@@ -753,6 +859,22 @@ hr{
         grid-template-columns: 2.5fr 2fr 2fr;
     }
 
+    .fun-con {
+        max-width: 680px;
+    }
+
+    .fun-con>.card>.card-img {
+        width: 200px;
+    }
+
+    .s-t-t {
+        font-size: 1rem;
+    }
+
+    .card-title {
+        width: 100%;
+    }
+
     .calculator {
 
         flex-direction: column;
@@ -772,9 +894,15 @@ hr{
     .calc-title {
         width: 590px;
         margin: 40px auto;
-        text-align:left;
-        
-        align-items: flex-start;
+        text-align: center;
+
+
+    }
+
+    .overlay>.btn {
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 8px 25px;
     }
 
     .team-con {
@@ -798,18 +926,20 @@ hr{
         background: none;
     }
 
-    .foot-con{
+    .foot-con {
         flex-direction: column;
-        gap: 50px   ;
+        gap: 50px;
         width: 670px;
         align-items: flex-start;
         padding: 20px;
     }
-    .foot-nav{
+
+    .foot-nav {
         justify-content: space-between;
     }
-    hr{
-        
+
+    hr {
+
         width: 670px;
     }
 
@@ -848,7 +978,7 @@ hr{
         flex-direction: column;
         width: 390px;
         align-items: center;
-        margin: auto ;
+        margin: auto;
 
     }
 
@@ -954,6 +1084,26 @@ hr{
         left: 10%;
     }
 
+    .fun-con {
+        max-width: 320px;
+        grid-template-columns: 1fr;
+    }
+
+    .fun-con>.card>.card-img {
+        width: 100%;
+    }
+
+    .s-t-t {
+        font-size: 1rem;
+    }
+    .fun-title{
+        width: 100%;
+    }
+
+    .card-title {
+        width: 100%;
+    }
+
     .calculator {
 
         flex-direction: column;
@@ -977,7 +1127,7 @@ hr{
 
     .calculate {
         width: 355px;
-        
+
     }
 
     .size>input {
@@ -1003,47 +1153,55 @@ hr{
 
 
     }
-    .team-title{
+
+    .team-title {
         width: 310px;
-        
-        
+
+
     }
-    .team{
+
+    .team {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 70px auto;
-        
+
     }
-    .t-title{
+
+    .t-title {
         font-size: 2rem;
     }
-    .foot-con{
+
+    .foot-con {
         flex-direction: column;
         width: 390px;
         justify-content: center;
-        margin: 70px auto ;
-        
+        margin: 70px auto;
+
     }
 
-     .foot-nav{
+    .foot-nav {
         justify-content: space-between;
         flex-direction: column;
         width: 390px;
     }
-    hr{
-        
+
+    hr {
+
         width: 370px;
     }
-    .list-1{
+
+    .list-1 {
         width: 185px;
         margin-bottom: 30px;
     }
-    .brand{
+
+    .brand {
         width: 395px;
         margin-bottom: 30px;
     }
-    .foot-nav> .list-1 >h2{
+
+    .foot-nav>.list-1>h2 {
         margin-bottom: 20px;
     }
 
