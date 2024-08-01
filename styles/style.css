@@ -403,8 +403,8 @@ a {
     font-size: 1rem;
     color: #FFFFFF;
     position: absolute;
-    top: 60%;
-    left: 10%;
+    top: 75%;
+    left: 5%;
 }
 
 .rc-text1 {
@@ -412,8 +412,8 @@ a {
     font-size: 1rem;
     color: #FFFFFF;
     position: absolute;
-    top: 15%;
-    left: 10%;
+    top: 10%;
+    left: 5%;
 }
 
 .rc-text2 {
@@ -421,8 +421,8 @@ a {
     font-size: 1rem;
     color: #FFFFFF;
     position: absolute;
-    top: 15%;
-    right: 10%;
+    top: 10%;
+    right: -10%;
 
 }
 
